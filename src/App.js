@@ -1,25 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Grid from '@material-ui/core/Grid';
+import Resume from './Resume';
+import NavBar from './NavBar';
+import About from './About';
+import Home from './Home';
+import ContactInfo from './ContactInfo';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <NavBar />
+
+        <Grid
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          style={{ minHeight: '100vh' }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Switch>
+            <Route path="/resume">
+              <Resume />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/contact">
+              <ContactInfo />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Grid>
+    </Router>
   );
 }
-
-export default App;
