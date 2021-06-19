@@ -16,7 +16,7 @@ export default function About() {
                         <CardMedia
                             component="img"
                             alt="Thomas Vy 1(Me)"
-                            image=".resizedJapan.jpg"
+                            image="resizedJapan.jpg"
                             title="Thomas Vy 1(Me)"
                         />
                     </Grid>
