@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
             <h2>Home</h2>
-            <Card style={{ maxWidth: "90vw"}}>
+            <Card>
                 <Box textAlign="justify" m={2}>
                         Oh, hello there. Welcome to my website. I am Thomas Vy, the creator of this website. This website was created with React.
                         Here's a little brief introduction of myself:

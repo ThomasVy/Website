@@ -10,7 +10,7 @@ export default function ContactInfo() {
     return (
         <>
             <h2>Contact Info</h2>
-            <Card style={{ maxWidth: "90vw"}}>
+            <Card>
                 <Box textAlign="justify" m={2}>
                     If you would like to contact me, 
                     please send an email to vythomas97@gmail.com or clicking the email link below.

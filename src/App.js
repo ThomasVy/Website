@@ -21,7 +21,7 @@ export default function App() {
           spacing={0}
           direction="column"
           alignItems="center"
-          style={{ minHeight: '100vh', margin: "20px 0" }}
+          style={{ minHeight: '100vh', margin: "auto", maxWidth: '90vw' }}
         >
           <Switch>
             <Route path="/resume">

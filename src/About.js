@@ -10,7 +10,7 @@ export default function About() {
     return (
         <>
             <h2>About Me</h2>
-            <Card style={{ maxWidth: "90vw", margin: "10px"}} >
+            <Card>
                 <Grid container spacing={1}>
                     <Grid item>
                         <CardMedia
@@ -35,7 +35,7 @@ export default function About() {
                     </Typography>
                 </CardContent>
             </Card>
-            <Card style={{ maxWidth: "90vw"}}>
+            <Card>
                 <Box textAlign="justify" m={2}>
                     <h3>Who Am I?</h3>
                     <p>
