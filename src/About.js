@@ -89,7 +89,7 @@ export default function About() {
                        and taught me how fun programming was. I had no prior experience with programming before that class, 
                        but after taking that course I immediately fell in love with programming. 
                        Programming in that class gave me a sense of euphoria whenever my code worked (Always made me want to dance).
-                       I created this billard game as a final project in that class (you can find it on my <a href="https://github.com/ThomasVy">GitHub</a>), 
+                       I created this billiard game as a final project in that class (you can find it on my <a href="https://github.com/ThomasVy">GitHub</a>), 
                        and when I got something to finally work after many failed attempts, it was one of the best feelings that I ever had. When I handed in the game for the class, 
                        I was extremely happy that I could product a game like that out of scratch, but I was also sad that the coding class was over.
                        That's when I started asking myself, if I still wanted to be register for Electrical Engineering.
@@ -103,6 +103,29 @@ export default function About() {
                        It would've allowed me to take some really interesting classes.
                        However, at the end the of the day, I am doing what I love and I do not regret a thing. 
                     </p>
+                </Box>
+                <Box textAlign="justify" m={2}>
+                    <h3>Classes I enjoyed in University</h3>
+                    <ol>
+                        <li>CPSC 453 - Introduction to Computer Graphics</li>
+                        <li>CPSC 457 - Operating Systems</li>
+                        <li>CPSC 525 - Principles of Computer Security</li>
+                        <li>CPSC 441 - Computer Networks</li>
+                        <li>ENSF 409 - Principles of Software Development</li>
+                        <li>ENSF 337 - Programming Fundamentals for Software and Computer</li>
+                        <li>ENGG 233 - Computing For Engineers</li>
+                    </ol>
+                </Box>
+                <Box textAlign="justify" m={2}>
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Programming (Of course since I am a Software Engineer)</li>
+                        <li>Gaming (video games or board games)</li>
+                        <li>Sports (Badminton is my go to)</li>
+                        <li>Weight lifting (I used to go to the gym all the time in Uni and highschool)</li>
+                        <li>Hiking</li>
+                        <li>Anything really. I just like having a good time with others</li>
+                    </ul>
                 </Box>
             </Card>
         </>

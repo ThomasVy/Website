@@ -10,6 +10,7 @@ import NavBar from './NavBar';
 import About from './About';
 import Home from './Home';
 import ContactInfo from './ContactInfo';
+import Projects from './Projects';
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
           spacing={0}
           direction="column"
           alignItems="center"
-          style={{ minHeight: '100vh', margin: "auto", maxWidth: '90vw' }}
+          style={{ minHeight: '100vh', margin: "30px auto", maxWidth: '90vw' }}
         >
           <Switch>
             <Route path="/resume">
@@ -32,6 +33,9 @@ export default function App() {
             </Route>
             <Route path="/contact">
               <ContactInfo />
+            </Route>
+            <Route path="/projects">
+              <Projects />
             </Route>
             <Route path="/">
               <Home />
