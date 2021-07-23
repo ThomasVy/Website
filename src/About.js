@@ -5,7 +5,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-
+import JapanImage from './images/resizedJapan.jpg';
+import ProfessionPic from './images/resize.jpg';
 export default function About() {
     return (
         <>
@@ -16,7 +17,7 @@ export default function About() {
                         <CardMedia
                             component="img"
                             alt="Thomas Vy 1(Me)"
-                            image="resizedJapan.jpg"
+                            image={JapanImage}
                             title="Thomas Vy 1(Me)"
                         />
                     </Grid>
@@ -24,7 +25,7 @@ export default function About() {
                         <CardMedia
                             component="img"
                             alt="Thomas Vy 2(Me)"
-                            image="resize.jpg"
+                            image={ProfessionPic}
                             title="Thomas Vy 2(Me)"
                         />
                     </Grid>

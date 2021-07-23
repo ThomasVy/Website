@@ -16,7 +16,6 @@ export default function App() {
   return (
     <Router>
       <NavBar />
-
         <Grid
           container
           spacing={0}

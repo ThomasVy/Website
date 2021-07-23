@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import IconButton from '@material-ui/core/IconButton';
+import ResumePDF from './pdfs/Resume.pdf';
 
 export default function Resume() {
     const [numPages, setNumPages] = useState(null);
@@ -21,8 +22,8 @@ export default function Resume() {
   
     function download() {
         const link = document.createElement("a");
-        link.download = "Resume.pdf";
-        link.href = "Resume.pdf";
+        link.download = ResumePDF;
+        link.href = ResumePDF;
         link.click();
     }
 
@@ -50,7 +51,7 @@ export default function Resume() {
         </Button>
         <Card>
             <Document
-            file="Resume.pdf"
+            file={ResumePDF}
             onLoadSuccess={onDocumentLoadSuccess}
             >
                 <Page pageNumber={pageNumber} />
