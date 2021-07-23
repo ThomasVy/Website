@@ -58,7 +58,7 @@ function Project({project}) {
                     subheader={project.software}
                 />
                 <Collapse in={expanded} timeout="auto">
-                    <CardMedia component="video" autoPlay src={require(`./videos/${project.video}`).default} style={{maxHeight: '700px'}} controls/>
+                    {project.video == null ? "" : <CardMedia component="video" src={require(`./videos/${project.video}`).default} style={{maxHeight: '600px'}} controls/>}
                     <CardContent>
                         <Typography variant="body2" color="textSecondary" component="p">
                             {project.description}

@@ -5,13 +5,6 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 const arrayOfProjects = [
     {
-        title: 'MoshirLearning',
-        software: 'Java, MySQL, TCP/UDP Sockets',
-        description: '',
-        githubLink: 'https://github.com/ThomasVy/MoshirLearning',
-        video: 'Spaceship.mp4',
-    },
-    {
         title:"Spaceship Game",
         software:"C++, OpenGL, Texture Mapping, Instancing, Shader programming, Matrix Manipulation",
         description:"Control a spaceship with WD key to move forward/back and mouse clicks to change the orientation of the ship. \
@@ -20,60 +13,67 @@ const arrayOfProjects = [
         video: 'Spaceship.mp4',
     },
     {
+        title: 'MoshirLearning',
+        software: 'Java, MySQL, TCP/UDP Sockets',
+        description: '',
+        githubLink: 'https://github.com/ThomasVy/MoshirLearning',
+        video: null,
+    },
+    {
         title: 'TicTacToe Game',
         software: 'Java, TCP/UDP Sockets',
         description: '',
         githubLink: 'https://github.com/ThomasVy/TicTacToe-Game',
-        video: 'Spaceship.mp4',
+        video: null,
     },
     {
         title: 'Laravel Book Review',
         software: 'Laravel, HTML/CSS, PHP, MySQL',
         description: '',
         githubLink: 'https://github.com/ThomasVy/Laravel-Book-Review',
-        video: 'Spaceship.mp4',
+        video: null,
     },
     {
         title: 'Earth-Simulation',
         software: 'C++, OpenGL, Texture Mapping, Viewing Pipeline programming, Shader programming, Matrix Manipulation',
         description: '',
         githubLink: 'https://github.com/ThomasVy/Earth-Simulation',
-        video: 'Spaceship.mp4',
+        video: null,
     },
     {
         title: 'Book Exchange',
         software: 'PHP, MySQL, HTML/CSS',
         description: '',
         githubLink: 'https://github.com/ThomasVy/BookExchange',
-        video: 'Spaceship.mp4',
+        video: null,
     },
     {
         title: 'Peer-to-Peer Messaging App',
         software: 'Python 3, TCP/UDP Sockets, Concurrent programming, Distributed Systems',
         description: '',
         githubLink: 'https://github.com/ThomasVy/P2P-Messaging-App',
-        video: 'Spaceship.mp4',
+        video: null,
     },
     {
         title: 'Billiard Game',
         software: 'Processing',
         description: '',
         githubLink: 'https://github.com/ThomasVy/Billiard-Game',
-        video: 'Spaceship.mp4',
+        video: null,
     },
     {
         title: 'Ray Tracing Scenes',
         software: 'C++, OpenGL, Ray Tracing',
         description: '',
         githubLink: 'https://github.com/ThomasVy/RayTracingScenes',
-        video: 'Spaceship.mp4',
+        video: null,
     },
     {
         title: 'Shape Rendering',
         software: 'C++, OpenGL, Imgui',
         description: '',
         githubLink: 'https://github.com/ThomasVy/Shape-Rendering',
-        video: 'Spaceship.mp4',
+        video: null,
     },
 ];
 
