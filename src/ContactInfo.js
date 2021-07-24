@@ -4,12 +4,16 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import IconButton from '@material-ui/core/IconButton';
 import EmailIcon from '@material-ui/icons/Email';
-import Box from '@material-ui/core/Box';
+import {useTheme} from './ThemeProvider';
+import { Typography } from '@material-ui/core';
 
 export default function ContactInfo() {
+    const theme = useTheme();
     return (
         <>
-            <h2>Contact Info</h2>
+            <Card className={theme.title}>
+                <Typography variant="h4">Contact Info</Typography>
+            </Card>
             <Card style={{maxWidth: "600px", padding: 10}}>
                 If you would like to contact me, 
                 please send an email to vythomas97@gmail.com or clicking the email link below.

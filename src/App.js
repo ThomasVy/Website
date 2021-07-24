@@ -12,13 +12,13 @@ import About from './About';
 import Home from './Home';
 import ContactInfo from './ContactInfo';
 import Projects from './Projects';
-
+import ThemeProvider from './ThemeProvider';
 
 const useStyles = makeStyles((theme) => ({
   mainContent: {
     minHeight: '100vh',
-    margin: "60px auto 10px auto",
-    maxWidth: '90vw' 
+    padding: "65px 0 15px 0",
+    backgroundColor: "#CEFFF8"
   }
 }));
 
@@ -27,30 +27,32 @@ export default function App() {
   return (
     <Router>
       <NavBar />
-      <Grid
-        container
-        direction="column"
-        alignItems="center"
-        className={classes.mainContent}
-      >
-        <Switch>
-          <Route path="/resume">
-            <Resume />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <ContactInfo />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Grid>
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          className={classes.mainContent}
+        >
+          <ThemeProvider>
+            <Switch>
+              <Route path="/resume">
+                <Resume />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/contact">
+                <ContactInfo />
+              </Route>
+              <Route path="/projects">
+                <Projects />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </ThemeProvider>
+        </Grid>
     </Router>
   );
 }

@@ -9,7 +9,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import IconButton from '@material-ui/core/IconButton';
 import clsx from 'clsx';
 import CardHeader from '@material-ui/core/CardHeader';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 import Collapse from '@material-ui/core/Collapse';
 
@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
 
 function Project({project}) {
     const classes = useStyles();
-    const theme = useTheme();
     const [expanded, setExpanded] = useState(false);
 
     const handleExpandClick = () => {

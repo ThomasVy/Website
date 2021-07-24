@@ -7,8 +7,11 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import IconButton from '@material-ui/core/IconButton';
 import ResumePDF from './pdfs/Resume.pdf';
+import {useTheme} from './ThemeProvider';
+import { Typography } from '@material-ui/core';
 
 export default function Resume() {
+    const theme = useTheme();
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
   
@@ -20,10 +23,10 @@ export default function Resume() {
       setNumPages(numPages);
     }
   
-    function download() {
+    function open() {
         const link = document.createElement("a");
-        link.download = ResumePDF;
         link.href = ResumePDF;
+        link.target = '_blank';
         link.click();
     }
 
@@ -39,15 +42,17 @@ export default function Resume() {
 
     return (
       <>
-        <h2>Resume</h2>
+        <Card className={theme.title}>
+            <Typography variant="h4">Resume</Typography>
+        </Card>
         <Button
             variant="contained"
             color="primary"
             size="large"
             startIcon={<GetAppIcon />}
-            onClick={download}
+            onClick={open}
         >
-            Download
+            Open in Separate Window
         </Button>
         <Card>
             <Document

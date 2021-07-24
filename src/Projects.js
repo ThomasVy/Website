@@ -1,8 +1,10 @@
 import Box from '@material-ui/core/Box';
 import React from 'react';
 import Project from './Project';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-
+import Card from '@material-ui/core/Card';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import { useTheme } from './ThemeProvider';
 const arrayOfProjects = [
     {
         title:"Spaceship Game",
@@ -91,8 +93,10 @@ export default function Projects() {
     const theme = useTheme();
     return (
         <>
-            <h2>Projects</h2>
-            <Box textAlign="justify" m={2}>
+            <Card className={theme.title}>
+                <Typography variant="h4">Projects</Typography>
+            </Card>
+            <Box>
                 These are a couple of my favorite projects. Checkout my <a href="https://github.com/ThomasVy">GitHub</a> for more of my projects.
             </Box>
             <div className={classes.container}>

@@ -4,11 +4,15 @@ import Card from '@material-ui/core/Card';
 import Box from '@material-ui/core/Box';
 import Chibi from './images/resize.jpg';
 import { Typography } from '@material-ui/core';
+import {useTheme} from './ThemeProvider';
 
 export default function Home() {
+    const theme = useTheme();
     return (
         <>
-            <h2>Home</h2>
+            <Card className={theme.title}>
+                <Typography variant="h4">Home</Typography>
+            </Card>
             <img src={Chibi} height="300" />
             <Card style={{maxWidth: "600px", padding: 10}}>
                 <Typography variant="h4" component="h3">Oh, hello there...</Typography>
@@ -34,10 +38,6 @@ export default function Home() {
                         <li>Python 3</li>
                         <li>React/Javascript</li>
                         <li>SQL</li>
-                        <li>NodeJS</li>
-                        <li>Batch</li>
-                        <li>Powershell</li>
-                        <li>Bash</li>
                     </ul>
                     and some more technical skills that can be found on my resume.
                 </Box>

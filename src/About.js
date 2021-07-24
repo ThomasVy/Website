@@ -1,41 +1,38 @@
 import React from 'react'
 import Card from '@material-ui/core/Card';
 import Box from '@material-ui/core/Box';
-import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import JapanImage from './images/resizedJapan.jpg';
 import ProfessionPic from './images/resize.jpg';
+import  { useTheme } from './ThemeProvider';
+
 export default function About() {
+    const theme = useTheme();
     return (
         <>
-            <h2>About Me</h2>
-            <Box>
-                <Grid container spacing={1}>
-                    <Grid item>
-                        <CardMedia
-                            component="img"
-                            alt="Thomas Vy 1(Me)"
-                            image={JapanImage}
-                            title="Thomas Vy 1(Me)"
-                        />
-                    </Grid>
-                    <Grid item>
-                        <CardMedia
-                            component="img"
-                            alt="Thomas Vy 2(Me)"
-                            image={ProfessionPic}
-                            title="Thomas Vy 2(Me)"
-                        />
-                    </Grid>
+            <Card className={theme.title}>
+                <Typography variant="h4">About Me</Typography>
+            </Card>
+            <Grid justify="center" container>
+                <Grid item>
+                    <CardMedia
+                        component="img"
+                        alt="Thomas Vy 1(Me)"
+                        image={JapanImage}
+                        title="Thomas Vy 1(Me)"
+                    />
                 </Grid>
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Thomas Vy (Me)
-                    </Typography>
-                </CardContent>
-            </Box>
+                <Grid item>
+                    <CardMedia
+                        component="img"
+                        alt="Thomas Vy 2(Me)"
+                        image={ProfessionPic}
+                        title="Thomas Vy 2(Me)"
+                    />
+                </Grid>
+            </Grid>
             <Card Card style={{maxWidth: "900px", padding: 10}}>
                 <Box>
                     <h3>Who Am I?</h3>
