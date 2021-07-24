@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Resume from './Resume';
 import NavBar from './NavBar';
@@ -12,35 +13,44 @@ import Home from './Home';
 import ContactInfo from './ContactInfo';
 import Projects from './Projects';
 
+
+const useStyles = makeStyles((theme) => ({
+  mainContent: {
+    minHeight: '100vh',
+    margin: "60px auto 10px auto",
+    maxWidth: '90vw' 
+  }
+}));
+
 export default function App() {
+  const classes = useStyles();
   return (
     <Router>
       <NavBar />
-        <Grid
-          container
-          spacing={0}
-          direction="column"
-          alignItems="center"
-          style={{ minHeight: '100vh', margin: "30px auto", maxWidth: '90vw' }}
-        >
-          <Switch>
-            <Route path="/resume">
-              <Resume />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/contact">
-              <ContactInfo />
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Grid>
+      <Grid
+        container
+        direction="column"
+        alignItems="center"
+        className={classes.mainContent}
+      >
+        <Switch>
+          <Route path="/resume">
+            <Resume />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <ContactInfo />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Grid>
     </Router>
   );
 }

@@ -10,12 +10,10 @@ export default function ContactInfo() {
     return (
         <>
             <h2>Contact Info</h2>
-            <Card>
-                <Box textAlign="justify" m={2}>
-                    If you would like to contact me, 
-                    please send an email to vythomas97@gmail.com or clicking the email link below.
-                     If you would like to learn more about me, my GitHub and my LinkedIn is down below.
-                </Box>
+            <Card style={{maxWidth: "600px", padding: 10}}>
+                If you would like to contact me, 
+                please send an email to vythomas97@gmail.com or clicking the email link below.
+                If you would like to learn more about me, my GitHub and my LinkedIn is down below.
             </Card>
             <Card style={{ margin: "5px"}}>
                 <IconButton aria-label="Email" onClick={() => window.open('mailto:vythomas97@gmail.com')}>
