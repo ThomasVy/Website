@@ -11,7 +11,7 @@ export default function About() {
     return (
         <>
             <h2>About Me</h2>
-            <Card>
+            <Box>
                 <Grid container spacing={1}>
                     <Grid item>
                         <CardMedia
@@ -35,9 +35,9 @@ export default function About() {
                         Thomas Vy (Me)
                     </Typography>
                 </CardContent>
-            </Card>
-            <Card>
-                <Box textAlign="justify" m={2}>
+            </Box>
+            <Card Card style={{maxWidth: "900px", padding: 10}}>
+                <Box>
                     <h3>Who Am I?</h3>
                     <p>
                         I am a Chinese male born and raised in Calgary, AB, Canada. I love programming and learning 
@@ -48,7 +48,7 @@ export default function About() {
                         Before university, I graduated from John G. Diefenbaker high school and Sir John A. MacDonald junior high.
                     </p>
                 </Box>
-                <Box textAlign="justify" m={2}>
+                <Box>
                     <h3>Why did I choose the path of Software Engineering?</h3>
                     <p>
                         Coming out of highschool, 
@@ -105,7 +105,7 @@ export default function About() {
                        However, at the end the of the day, I am doing what I love and I do not regret a thing. 
                     </p>
                 </Box>
-                <Box textAlign="justify" m={2}>
+                <Box>
                     <h3>Classes I enjoyed in University</h3>
                     <ol>
                         <li>CPSC 453 - Introduction to Computer Graphics</li>
@@ -117,7 +117,7 @@ export default function About() {
                         <li>ENGG 233 - Computing For Engineers</li>
                     </ol>
                 </Box>
-                <Box textAlign="justify" m={2}>
+                <Box>
                     <h3>Hobbies</h3>
                     <ul>
                         <li>Programming (Of course since I am a Software Engineer)</li>

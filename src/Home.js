@@ -2,18 +2,22 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import Card from '@material-ui/core/Card';
 import Box from '@material-ui/core/Box';
+import Chibi from './images/resize.jpg';
+import { Typography } from '@material-ui/core';
 
 export default function Home() {
     return (
         <>
             <h2>Home</h2>
-            <Card>
-                <Box textAlign="justify" m={2}>
-                        Oh, hello there. Welcome to my website. I am Thomas Vy, the creator of this website. This website was created with React.
+            <img src={Chibi} height="300" />
+            <Card style={{maxWidth: "600px", padding: 10}}>
+                <Typography variant="h4" component="h3">Oh, hello there...</Typography>
+                <Box>
+                        Welcome to my website. I am Thomas Vy, the creator of this website. This website was created with React.
                         Here's a little brief introduction of myself:
                         I am a Calgary based programmer with a passion for learning the unknown. I love learning and passing my knowledge to others.
                 </Box>
-                <Box textAlign="justify" m={2}>
+                <Box>
                     I was previously:
                     <ul>
                         <li>an employee of GEOSLOPE International Ltd.</li>
@@ -22,7 +26,7 @@ export default function Home() {
                         <li>a member of the Schulich Unmanned Aerial Vehicle's Software Team</li>
                     </ul>
                 </Box>
-                <Box textAlign="justify" m={2}>
+                <Box>
                     I have experience programming:
                     <ul>
                         <li>C/C++</li>
@@ -37,7 +41,7 @@ export default function Home() {
                     </ul>
                     and some more technical skills that can be found on my resume.
                 </Box>
-                <Box textAlign="justify" m={2}>
+                <Box>
                     <p>
                         For more information about me, check out the <NavLink to='/about'>About Me</NavLink> page.
                     </p>
