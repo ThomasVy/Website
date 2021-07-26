@@ -42,9 +42,7 @@ export default function Resume() {
 
     return (
       <>
-        <Card className={theme.title}>
-            <Typography variant="h4">Resume</Typography>
-        </Card>
+        <Typography variant="h4" className={theme.title}>Resume</Typography>
         <Button
             variant="contained"
             color="primary"

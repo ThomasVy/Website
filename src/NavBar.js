@@ -11,15 +11,23 @@ import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(() => ({
     header: {
+        backgroundColor: "#1C1C1C"
     },
     drawerContainer: {
-        padding: "20px 30px",
+        padding: "3px 20px",
+    },
+    drawer: {
+        backgroundColor: '#1C1C1C'
     },
     menuButton: {
         fontFamily: "Open Sans, sans-serif",
         fontWeight: 700,
         size: "18px",
         marginLeft: "38px",
+        color: "white",
+        '&:hover': {
+            backgroundColor: "#252525"
+        }
     },
     logo: {
         fontFamily: "Open Sans, sans-serif",
@@ -76,7 +84,7 @@ export default function NavBar() {
         return (
           <Toolbar className={classes.toolbar}>
             <div className={classes.logo}>
-                Thomas Vy's Website
+                Thomas Vy
             </div>
             {getMenuButtons()}
           </Toolbar>
@@ -92,12 +100,11 @@ export default function NavBar() {
                     <Link
                     
                         to={href}
-                        color="inherit"
-                        style={{textDecoration: "none"}}
                         key={label}
                         onClick={handleDrawerClose}
+                        style={{textDecoration: 'none'}}
                     >
-                        <MenuItem>{label}</MenuItem>
+                        <MenuItem style={{marginLeft: "0"}} className={classes.menuButton}>{label}</MenuItem>
                     </Link>
                 );
             });
@@ -118,11 +125,20 @@ export default function NavBar() {
                     anchor="left"
                     open={drawerOpen}
                     onClose={handleDrawerClose}
+                    classes={{ paper: classes.drawer }}
                 >
-                    <div className={classes.drawerContainer}>{getDrawerChoices()}</div>
+                    <div className={classes.drawerContainer}>
+                    <IconButton
+                    edge="start"
+                    style={{color: "white"}}
+                    onClick={handleDrawerClose}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    {getDrawerChoices()}</div>
                 </Drawer>
                 <div className={classes.logo}>
-                    Thomas Vy's Website
+                    Thomas Vy
                 </div>
             </Toolbar>
             

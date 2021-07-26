@@ -8,9 +8,10 @@ export function useTheme() {
 }
 const useStyles = makeStyles((theme) => ({
     title: {
-      margin: '15px',
+      margin: '1.05rem',
       padding: '10px',
-      backgroundColor: '#FFFAF6'
+      backgroundColor: 'inherit',
+      color: "white"
     }
 }));
 

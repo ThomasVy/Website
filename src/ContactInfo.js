@@ -11,9 +11,7 @@ export default function ContactInfo() {
     const theme = useTheme();
     return (
         <>
-            <Card className={theme.title}>
-                <Typography variant="h4">Contact Info</Typography>
-            </Card>
+            <Typography variant="h4" className={theme.title}>Contact Info</Typography>
             <Card style={{maxWidth: "600px", padding: 10}}>
                 If you would like to contact me, 
                 please send an email to vythomas97@gmail.com or clicking the email link below.

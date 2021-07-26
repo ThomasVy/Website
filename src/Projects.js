@@ -83,8 +83,8 @@ const useStyles = makeStyles((theme) => ({
     container: {
         display: 'flex',
         flexDirection: 'column',
-        padding: '5px'
-
+        padding: '5px',
+        maxWidth: '900px' 
     }
 }));
 
@@ -93,11 +93,12 @@ export default function Projects() {
     const theme = useTheme();
     return (
         <>
-            <Card className={theme.title}>
-                <Typography variant="h4">Projects</Typography>
-            </Card>
-            <Box>
-                These are a couple of my favorite projects. Checkout my <a href="https://github.com/ThomasVy">GitHub</a> for more of my projects.
+            <Typography variant="h4" className={theme.title}>Projects</Typography>
+            <Box color="white">
+                These are a couple of my favorite projects. 
+                Checkout my <a href="https://github.com/ThomasVy" style={{color: "#D3D3D3"}}>
+                    GitHub
+                </a> for more of my projects.
             </Box>
             <div className={classes.container}>
                 {arrayOfProjects.map((project) => <Project key={project.title} project={project}/>)}
