@@ -21,16 +21,12 @@ export default function Resume() {
     }, []);
   
     useEffect(() => {
-        const setResponsiveness = () => {
-          return setWidth(window.innerWidth/1.5);
-        };
-    
-        setResponsiveness();
-        window.addEventListener("resize", () => setResponsiveness());
-    
-        return () => {
-          window.removeEventListener("resize", () => setResponsiveness());
-     }}, []);
+        if (window.innerWidth > 950) {
+            setWidth(800);
+        } else {
+            setWidth(window.innerWidth);
+        }
+    }, []);
   
     function onDocumentLoadSuccess({ numPages }) {
       setNumPages(numPages);
