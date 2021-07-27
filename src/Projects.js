@@ -1,7 +1,6 @@
 import Box from '@material-ui/core/Box';
 import React from 'react';
 import Project from './Project';
-import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTheme } from './ThemeProvider';
@@ -9,8 +8,7 @@ const arrayOfProjects = [
     {
         title:"Spaceship Game",
         software:"C++, OpenGL, Texture Mapping, Instancing, Shader programming, Matrix Manipulation",
-        description:"Control a spaceship with WD key to move forward/back and mouse clicks to change the orientation of the ship. \
-                     Gems randomly spawn on the map. Collect them all without touching the fires to win.",
+        description:"Control a spaceship with WD key to move forward/back and mouse clicks to change the orientation of the ship. Gems randomly spawn on the map. Collect them all without touching the fires to win.",
         githubLink:"https://github.com/ThomasVy/Spaceship-game",
         video: 'Spaceship.mp4',
     },

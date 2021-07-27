@@ -14,10 +14,23 @@ export default function Resume() {
     const theme = useTheme();
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
-  
+    const [width, setWidth] = useState(300);
+
     useEffect(() => {
       pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
     }, []);
+  
+    useEffect(() => {
+        const setResponsiveness = () => {
+          return setWidth(window.innerWidth/1.5);
+        };
+    
+        setResponsiveness();
+        window.addEventListener("resize", () => setResponsiveness());
+    
+        return () => {
+          window.removeEventListener("resize", () => setResponsiveness());
+     }}, []);
   
     function onDocumentLoadSuccess({ numPages }) {
       setNumPages(numPages);
@@ -49,6 +62,7 @@ export default function Resume() {
             size="large"
             startIcon={<GetAppIcon />}
             onClick={open}
+            style={{marginTop: 20}}
         >
             Open in Separate Window
         </Button>
@@ -57,7 +71,7 @@ export default function Resume() {
             file={ResumePDF}
             onLoadSuccess={onDocumentLoadSuccess}
             >
-                <Page pageNumber={pageNumber} />
+                <Page pageNumber={pageNumber} width={width} />
             </Document>
             <div>
                 <IconButton aria-label="prev" disabled={pageNumber === 1} color="primary" onClick={prevPage}>

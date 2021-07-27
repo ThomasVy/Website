@@ -17,42 +17,43 @@ import ThemeProvider from './ThemeProvider';
 const useStyles = makeStyles((theme) => ({
   mainContent: {
     minHeight: '100vh',
-    padding: "65px 0 15px 0",
-    backgroundColor: "#212121"
+    padding: "90px 0 15px 0"
   }
 }));
 
 export default function App() {
   const classes = useStyles();
   return (
-    <Router>
-      <NavBar />
-        <Grid
-          container
-          direction="column"
-          alignItems="center"
-          className={classes.mainContent}
-        >
-          <ThemeProvider>
-            <Switch>
-              <Route path="/resume">
-                <Resume />
-              </Route>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/contact">
-                <ContactInfo />
-              </Route>
-              <Route path="/projects">
-                <Projects />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </ThemeProvider>
-        </Grid>
-    </Router>
+    <div style={{backgroundColor: "#212121"}}>
+      <Router>
+        <NavBar />
+          <Grid
+            container
+            direction="column"
+            alignItems="center"
+            className={classes.mainContent}
+          >
+            <ThemeProvider>
+              <Switch>
+                <Route path="/resume">
+                  <Resume />
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+                <Route path="/contact">
+                  <ContactInfo />
+                </Route>
+                <Route path="/projects">
+                  <Projects />
+                </Route>
+                <Route path="/">
+                  <Home />
+                </Route>
+              </Switch>
+            </ThemeProvider>
+          </Grid>
+      </Router>
+    </div>
   );
 }

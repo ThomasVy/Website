@@ -8,7 +8,6 @@ export function useTheme() {
 }
 const useStyles = makeStyles((theme) => ({
     title: {
-      margin: '1.5rem',
       backgroundColor: 'inherit',
       color: "white"
     },

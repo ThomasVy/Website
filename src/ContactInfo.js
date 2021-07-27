@@ -12,7 +12,7 @@ export default function ContactInfo() {
     return (
         <>
             <Typography variant="h4" className={theme.title}>Contact Info</Typography>
-            <Card className={theme.mainCard}>
+            <Card className={theme.mainCard} style={{marginTop: 20}}>
                 If you would like to contact me, 
                 please send an email to vythomas97@gmail.com or clicking the email link below.
                 If you would like to learn more about me, my GitHub and my LinkedIn is down below.
