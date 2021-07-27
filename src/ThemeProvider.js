@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "900px",
       padding: 10,
       margin: 10
-    }
+    },
 }));
 
 export default function ThemeProvider({children}) {
