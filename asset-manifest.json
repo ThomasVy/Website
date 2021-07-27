@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Website/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Website/static/js/main.e534e428.chunk.js",
-    "main.js.map": "/Website/static/js/main.e534e428.chunk.js.map",
+    "main.js": "/Website/static/js/main.8a1137c4.chunk.js",
+    "main.js.map": "/Website/static/js/main.8a1137c4.chunk.js.map",
     "runtime-main.js": "/Website/static/js/runtime-main.631f83ce.js",
     "runtime-main.js.map": "/Website/static/js/runtime-main.631f83ce.js.map",
-    "static/js/2.64ad3c7d.chunk.js": "/Website/static/js/2.64ad3c7d.chunk.js",
-    "static/js/2.64ad3c7d.chunk.js.map": "/Website/static/js/2.64ad3c7d.chunk.js.map",
+    "static/js/2.9e5cee3d.chunk.js": "/Website/static/js/2.9e5cee3d.chunk.js",
+    "static/js/2.9e5cee3d.chunk.js.map": "/Website/static/js/2.9e5cee3d.chunk.js.map",
     "index.html": "/Website/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/Website/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.64ad3c7d.chunk.js.LICENSE.txt": "/Website/static/js/2.64ad3c7d.chunk.js.LICENSE.txt",
+    "static/js/2.9e5cee3d.chunk.js.LICENSE.txt": "/Website/static/js/2.9e5cee3d.chunk.js.LICENSE.txt",
     "static/media/Resume.433bd9b7.pdf": "/Website/static/media/Resume.433bd9b7.pdf",
     "static/media/Spaceship.mp4": "/Website/static/media/Spaceship.15d19c1e.mp4",
     "static/media/resize.2a19af06.jpg": "/Website/static/media/resize.2a19af06.jpg",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.631f83ce.js",
-    "static/js/2.64ad3c7d.chunk.js",
+    "static/js/2.9e5cee3d.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e534e428.chunk.js"
+    "static/js/main.8a1137c4.chunk.js"
   ]
 }
