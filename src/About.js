@@ -13,9 +13,8 @@ export default function About() {
     const theme = useTheme();
     return (
         <>
-
             <Typography variant="h4" className={theme.title}>About Me</Typography>
-            <Grid justify="center" container>
+            <Grid justify="center" style={{padding: "20px"}} container>
                 <Grid item>
                     <CardMedia
                         component="img"
@@ -33,7 +32,7 @@ export default function About() {
                     />
                 </Grid>
             </Grid>
-            <Card Card style={{maxWidth: "900px", padding: 10}}>
+            <Card className={theme.mainCard}>
                 <Box>
                     <Box fontWeight="fontWeightBold" fontSize="h6.fontSize" component="h1">
                         Who Am I?

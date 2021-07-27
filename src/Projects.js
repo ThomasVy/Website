@@ -94,7 +94,7 @@ export default function Projects() {
     return (
         <>
             <Typography variant="h4" className={theme.title}>Projects</Typography>
-            <Box color="white">
+            <Box style={{margin: '20px'}} color="white">
                 These are a couple of my favorite projects. 
                 Checkout my <a href="https://github.com/ThomasVy" style={{color: "#D3D3D3"}}>
                     GitHub

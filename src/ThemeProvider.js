@@ -8,10 +8,14 @@ export function useTheme() {
 }
 const useStyles = makeStyles((theme) => ({
     title: {
-      margin: '1.05rem',
-      padding: '10px',
+      margin: '1.5rem',
       backgroundColor: 'inherit',
       color: "white"
+    },
+    mainCard: {
+      maxWidth: "900px",
+      padding: 10,
+      margin: 10
     }
 }));
 
