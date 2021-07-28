@@ -24,36 +24,34 @@ const useStyles = makeStyles((theme) => ({
 export default function App() {
   const classes = useStyles();
   return (
-    <div style={{backgroundColor: "#212121"}}>
-      <Router>
-        <NavBar />
-          <Grid
-            container
-            direction="column"
-            alignItems="center"
-            className={classes.mainContent}
-          >
-            <ThemeProvider>
-              <Switch>
-                <Route path="/resume">
-                  <Resume />
-                </Route>
-                <Route path="/about">
-                  <About />
-                </Route>
-                <Route path="/contact">
-                  <ContactInfo />
-                </Route>
-                <Route path="/projects">
-                  <Projects />
-                </Route>
-                <Route path="/">
-                  <Home />
-                </Route>
-              </Switch>
-            </ThemeProvider>
-          </Grid>
-      </Router>
-    </div>
+    <Router>
+      <NavBar />
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          className={classes.mainContent}
+        >
+          <ThemeProvider>
+            <Switch>
+              <Route path="/resume">
+                <Resume />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/contact">
+                <ContactInfo />
+              </Route>
+              <Route path="/projects">
+                <Projects />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </ThemeProvider>
+        </Grid>
+    </Router>
   );
 }
