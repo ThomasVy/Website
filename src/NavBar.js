@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import Drawer from '@material-ui/core/Drawer';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import icon from './images/thomas_transparent.png';
 
 const useStyles = makeStyles(() => ({
     header: {
@@ -30,6 +31,10 @@ const useStyles = makeStyles(() => ({
         }
     },
     logo: {
+        display: 'flex',
+        alignItems: 'center'
+    },
+    logoText: {
         fontFamily: "Open Sans, sans-serif",
         fontWeight: 800,
     },
@@ -44,10 +49,6 @@ export default function NavBar() {
     const [mobileView, setMobileView] = useState(false);
     const [drawerOpen, setDrawerOpen] = useState(false);
     const headersData = [
-        {
-            label: "Home",
-            href: "/"
-        },
         {
             label: "Projects",
             href: "/projects"
@@ -65,6 +66,18 @@ export default function NavBar() {
             href: "/contact"
         },
     ];
+    const getLogo = () => {
+        return (
+            <Link 
+                to="/"
+                style={{textDecoration: 'none', color: "white"}}
+                className={classes.logo} 
+            >
+                <div><img alt="logo" src={icon}height={60}/></div>
+                <div className={classes.logoText}>Thomas Vy</div>
+            </Link>
+        );
+    }
     const displayDesktop = () => {
         const getMenuButtons = () => {
             return headersData.map(({ label, href }) => {
@@ -83,9 +96,7 @@ export default function NavBar() {
         };
         return (
           <Toolbar className={classes.toolbar}>
-            <div className={classes.logo}>
-                Thomas Vy
-            </div>
+            {getLogo()}
             {getMenuButtons()}
           </Toolbar>
         );
@@ -137,9 +148,7 @@ export default function NavBar() {
                     </IconButton>
                     {getDrawerChoices()}</div>
                 </Drawer>
-                <div className={classes.logo}>
-                    Thomas Vy
-                </div>
+                {getLogo()}
             </Toolbar>
             
         );
