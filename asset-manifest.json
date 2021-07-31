@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Website/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Website/static/js/main.e9e42685.chunk.js",
-    "main.js.map": "/Website/static/js/main.e9e42685.chunk.js.map",
+    "main.js": "/Website/static/js/main.a9749ae1.chunk.js",
+    "main.js.map": "/Website/static/js/main.a9749ae1.chunk.js.map",
     "runtime-main.js": "/Website/static/js/runtime-main.631f83ce.js",
     "runtime-main.js.map": "/Website/static/js/runtime-main.631f83ce.js.map",
     "static/js/2.a172c6b9.chunk.js": "/Website/static/js/2.a172c6b9.chunk.js",
@@ -20,13 +20,13 @@
     "static/media/TicTacToe.mp4": "/Website/static/media/TicTacToe.ca446ba9.mp4",
     "static/media/resize.2a19af06.jpg": "/Website/static/media/resize.2a19af06.jpg",
     "static/media/resizedJapan.98e1566a.jpg": "/Website/static/media/resizedJapan.98e1566a.jpg",
-    "static/media/thomas-animation.f9c7f995.gif": "/Website/static/media/thomas-animation.f9c7f995.gif",
-    "static/media/thomas_transparent.250cbc1b.png": "/Website/static/media/thomas_transparent.250cbc1b.png"
+    "static/media/thomas-animation.c3b1cd9f.gif": "/Website/static/media/thomas-animation.c3b1cd9f.gif",
+    "static/media/thomas_transparent.0c5f446c.png": "/Website/static/media/thomas_transparent.0c5f446c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.631f83ce.js",
     "static/js/2.a172c6b9.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e9e42685.chunk.js"
+    "static/js/main.a9749ae1.chunk.js"
   ]
 }
