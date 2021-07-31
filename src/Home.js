@@ -11,10 +11,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     content: {
         display: "flex",
-        height: "80vh", 
         flexDirection: "column",
         alignItems: "center",
-        overflow: "hidden"
     },
     titleRow: {
         display: "flex",
@@ -30,11 +28,9 @@ export default function Home() {
     const classes = useStyles();
     return (
         <div className={classes.content}>  
-            <div className={classes.titleRow}>
-                <Fade in={true} timeout={1500}>
-                    <Typography variant="h4" className={theme.title} >Home</Typography>
-                </Fade>
-            </div>
+            <Fade in={true} timeout={1500}>
+                <Typography variant="h4" className={theme.title} >Home</Typography>
+            </Fade>
             <Slide direction="left" in={true} timeout={1500} mountOnEnter unmountOnExit >
                 <figure>
                     <img alt="Thomas" src={Chibi} height="300" />

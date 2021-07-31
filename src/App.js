@@ -16,8 +16,7 @@ import ThemeProvider from './ThemeProvider';
 
 const useStyles = makeStyles((theme) => ({
   mainContent: {
-    minHeight: '100vh',
-    padding: "90px 0 15px 0"
+    padding: "90px 0 20px 0"
   }
 }));
 

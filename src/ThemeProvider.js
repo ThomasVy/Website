@@ -13,8 +13,9 @@ const useStyles = makeStyles((theme) => ({
     },
     mainCard: {
       maxWidth: "900px",
-      padding: 10,
-      margin: 10
+      padding: 15,
+      margin: 10,
+      width: "80vw"
     },
 }));
 
