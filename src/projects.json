@@ -1,16 +1,17 @@
 { "allProjects": [
     {
+        "title": "MoshirLearning",
+        "software": "Java, MySQL, TCP Sockets, MVC",
+        "description": "A class management software for students and professors (Similar to D2L). Professors can create courses, set the course active or inactive, enroll/unenroll students, upload assignments, download and grade submissions, send group emails to students. A student can view courses they're enrolled in and that are active, view and download assignments, view grades, upload assignment submissions, view other students enrolled in the class, and send an email to the professor. In the video, the program on the left is the professor and the program on the right is the student. This project was completed for ENSF 409 in 2017 and won outstanding project.",
+        "githubLink": "https://github.com/ThomasVy/MoshirLearning",
+        "video": "MoshirLearning.mp4"
+    },
+    {
         "title":"Spaceship Game",
         "software":"C++, OpenGL",
         "description":"Control a spaceship with WD key to move forward/back and mouse clicks to change the orientation of the ship. Gems randomly spawn on the map. Collect them all without touching the fires to win.",
         "githubLink":"https://github.com/ThomasVy/Spaceship-game",
         "video": "Spaceship.mp4"
-    },
-    {
-        "title": "MoshirLearning",
-        "software": "Java, MySQL, TCP Sockets",
-        "description": "",
-        "githubLink": "https://github.com/ThomasVy/MoshirLearning"
     },
     {
         "title": "TicTacToe Game",
@@ -22,8 +23,9 @@
     {
         "title": "Laravel Book Review",
         "software": "Laravel, HTML/CSS, PHP, MySQL",
-        "description": "",
-        "githubLink": "https://github.com/ThomasVy/Laravel-Book-Review"
+        "description": "A website for users to subscribe and submit book reviews. Books can only be reviewed by admins and users that were previously subscribed. Anyone can register as a new user to begin reviewing books. Admins can edit users' information, unsubscribe or subscriber users to books, edit authors' information, create new books, delete books, and edit book information. ",
+        "githubLink": "https://github.com/ThomasVy/Laravel-Book-Review",
+        "video": "LaravelBook.mp4"
     },
     {
         "title": "Fractal Renderer",

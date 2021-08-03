@@ -106,9 +106,9 @@ export default function About() {
                         <li>C/C++</li>
                         <li>Java</li>
                         <li>Python 3</li>
-                        <li>React</li>
+                        <li>React/TypeScript</li>
                         <li>JavaScript/HTML/CSS</li>
-                        <li>SQL</li>
+                        <li>MySQL</li>
                     </ul>
                 </Box>
                 <Box>
