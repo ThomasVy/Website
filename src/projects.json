@@ -43,9 +43,10 @@
     },
     {
         "title": "Book Exchange",
-        "software": "PHP, MySQL, HTML/CSS",
-        "description": "",
-        "githubLink": "https://github.com/ThomasVy/BookExchange"
+        "software": "PHP, Apache, MySQL, HTML/CSS",
+        "description": "A book exchange website for students. Users can view courses, publishers, authors, listings, and the books associated with them. Users can create listings for a specific book so that other users can make an online or pick up order. Users can leave reviews for others and they can view and change their information on their user page. Admins can add/edit authors, publishers, courses, and listings.",
+        "githubLink": "https://github.com/ThomasVy/BookExchange",
+        "video": "BookExchange.mp4"
     },
     {
         "title": "Peer-to-Peer Messaging App",
